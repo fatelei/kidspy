@@ -51,11 +51,11 @@ class TestKids(unittest.TestCase):
         cli = StrictRedis(port=6379, host="localhost")
         p = cli.pubsub()
         p.subscribe("test")
-        p.get_message()
         test = logging.getLogger("test")
         test.handlers = []
         handler = KidsHandler(port=6379, host="localhost")
         test.addHandler(handler)
         test.info("test")
+        p.get_message()
         rst = p.get_message()
         self.assertIn("test", rst["data"])
