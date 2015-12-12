@@ -1,0 +1,2 @@
+# kidspy
+Kids Python Client.
