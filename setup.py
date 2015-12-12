@@ -13,6 +13,7 @@ setup(
     install_requires=["redis"],
     packages=["kids"],
     zip_safe=False,
+    url="https://github.com/fatelei/kidspy",
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Console",
