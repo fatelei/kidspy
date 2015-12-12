@@ -34,7 +34,7 @@ You can do this like::
 
   handler = KidsHandler(port=3388,
                         host="localhost",
-                        topic="test")
+                        topic="test")  # If you don't pass the topic, the topic will be logger name.
   test.addHandler(handler)
 
 
