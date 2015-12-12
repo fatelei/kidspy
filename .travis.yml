@@ -6,6 +6,6 @@ services:
   - redis
 before_script:
   - pip install tox
-  - python setup install
+  - python setup.py install
 script:
   - tox
