@@ -55,7 +55,7 @@ Here is code::
       },
       "loggers": {
           "test": {
-              "handlers": [kids]
+              "handlers": ["kids"]
           }
       }
   })
