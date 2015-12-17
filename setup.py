@@ -2,11 +2,10 @@
 
 from setuptools import setup
 
-from kids import __version__
 
 setup(
     name="kids",
-    version=__version__,
+    version="1.0.2",
     author="fatelei",
     author_email="fatelei@gmail.com",
     description="Kids Python Client",
