@@ -68,11 +68,6 @@ class KidsHandler(logging.Handler):
         raw_record = self.formatter.format(record)
         try:
             self.kids.publish(topic, raw_record)
-        except KeyboardInterrupt:
-            pass
-        except (redis.ConnectionError, redis.TimeoutError):
-            # Pass connection error.
-            pass
-        except:
-            # Always log record to stderr.
+        except (redis.ConnectionError, redis.TimeoutError, SystemExit):
+            # Handle publish message error, and log to stderr.
             self.handleError(record)
