@@ -71,3 +71,5 @@ class KidsHandler(logging.Handler):
         except (redis.ConnectionError, redis.TimeoutError, SystemExit):
             # Handle publish message error, and log to stderr.
             self.handleError(record)
+        except Exception:
+            pass

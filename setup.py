@@ -5,7 +5,7 @@ from setuptools import setup
 
 setup(
     name="kids",
-    version="1.0.3",
+    version="1.0.4",
     author="fatelei",
     author_email="fatelei@gmail.com",
     description="Kids Python Client",
